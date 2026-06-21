@@ -24,8 +24,30 @@ body {
 .container-meta h2 {
     color: #ffffff;
     margin-top: 0;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
     font-size: 24px;
+}
+
+/* Container e Botão de Alternância de Modo */
+.toggle-mode-container {
+    margin-bottom: 20px;
+}
+
+.btn-toggle-mode {
+    width: 100%;
+    padding: 10px;
+    background-color: #121214;
+    color: #e1e1e6;
+    border: 2px dashed #4a90e2;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.2s, border-color 0.2s;
+}
+
+.btn-toggle-mode:hover {
+    background-color: #29292e;
+    border-color: #357abd;
 }
 
 .input-group-meta {
@@ -88,6 +110,15 @@ body {
     background-color: #357abd;
 }
 
+.btn-alterar {
+    flex: 2;
+    background-color: #996dff;
+}
+
+.btn-alterar:hover {
+    background-color: #8257e5;
+}
+
 .btn-resetar {
     flex: 1;
     background-color: #f75a68;
@@ -120,7 +151,7 @@ body {
     color: #e1e1e6;
 }
 
-/* Histórico */
+/* Histórico Adaptativo */
 .history-section-meta {
     margin-top: 30px;
     text-align: left;
@@ -158,13 +189,32 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.border-positive {
     border-left: 4px solid #00b37e;
 }
 
-.history-value-meta {
-    font-weight: bold;
+.border-negative {
+    border-left: 4px solid #f75a68;
+}
+
+.text-positive {
     color: #00b37e;
+    font-weight: bold;
     font-size: 15px;
+}
+
+.text-negative {
+    color: #f75a68;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.tag-ajuste {
+    color: #7c7c8a;
+    font-weight: normal;
+    margin-left: 5px;
 }
 
 .history-date-meta {
