@@ -1,6 +1,6 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import './index.css'
+import './GoalTracker.jsx'
 import App from './GoalTracker.jsx'
 
 createRoot(document.getElementById('root')).render(
